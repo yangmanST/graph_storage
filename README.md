@@ -14,17 +14,17 @@ directory:[dataset](https://github.com/yangmanST/graph_storage/tree/master/datas
 [test](https://github.com/yangmanST/graph_storage/tree/master/dataset/test):Labeled test set  
 [full_dataset](https://github.com/yangmanST/graph_storage/tree/master/dataset/full_dataset):Training set and test set  
 
-Module description:
+Module description:  
 directory:[processing](https://github.com/yangmanST/graph_storage/tree/master/processing)  
 Generate the initial feature vector  
 directory:[cost_evalution](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution)  
 [scnn.py](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution/scnn.py),[dcnn.py](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution/dcnn.py) and [gru.py](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution/gru.py) are the three models;[sampling.py](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution/sampling.py) is responsible for sampling in each round of active learning;[classify.py](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution/classify.py) is the main program responsible for training and evaluation.
 
-java project description：
-preprocessing.java：It parses the feature vector and interacts with the database to obtain the vector label.
+java project description：  
+preprocessing.java：It parses the feature vector and interacts with the database to obtain the vector label.  
 ## run
-labeling phase：Package preprocesing into a jar package, and then run in the ubuntu.Before run the jar package,you need to deploy the [benchmark](https://github.com/kuzeko/graph-databases-testsuite)
-train phase:the main program responsible for training and evaluation is [classify.py](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution/classify.py)
+labeling phase：Package preprocesing into a jar package, and then run in the ubuntu.Before run the jar package,you need to deploy the [benchmark](https://github.com/kuzeko/graph-databases-testsuite)  
+train phase:the main program responsible for training and evaluation is [classify.py](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution/classify.py)  
 
 ## Results
 We train the models with CPU and 8G memory.The accuracy evaluation on full dataset(LDBC) is as follows:
