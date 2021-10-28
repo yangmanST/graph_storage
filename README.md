@@ -30,12 +30,12 @@ train phase:the main program responsible for training and evaluation is [classif
 
 ## Results
 We train the models with CPU and 8G memory.The accuracy evaluation on full dataset(LDBC) is as follows:
-| Model      | SCNN | DCNN     | GRU     |
-| :---        |    :----:   |          ---: |
-| 42%   | 0.84	| 0.76	    | 0.66  |
-| 63%   | 0.89	| 0.77	    | 0.70  |
-| 84%   | 0.92	| 0.90	    | 0.77  |
-| 100%  | 0.96	| 0.90	    | 0.82  |
+ Model      | SCNN | DCNN     | GRU     
+ :---        |    :----:   |          ---: 
+ 42%   | 0.84	| 0.76	    | 0.66  
+ 63%   | 0.89	| 0.77	    | 0.70  
+ 84%   | 0.92	| 0.90	    | 0.77  
+ 100%  | 0.96	| 0.90	    | 0.82  
 
 
 
