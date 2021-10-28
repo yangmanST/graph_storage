@@ -2,7 +2,8 @@
 ## Background
 We design an active auto-estimator to implement the graph storage solution. Considering the complex characteristics of evaluation task, we carefully design
 the feature engineering, including graph data features, graph workload features and graph storage solution. Our model could be used to evaluate which one is the best storage solution incertain graph and workload. In the experiment, we utilize two open source graph datasets in micro-benchmark  to train models(SCNN,DCNN,GRU),which are Freebase and LDBC datasets.
-#Experiments
+
+## Experiments
 Our experiments are conducted on the Ubuntu 18.04 with 8G memory and 80G disk. The deep classfier is trained with CPU and 8G memory.
 
 ## Code introduction
@@ -22,12 +23,17 @@ directory:[cost_evalution](https://github.com/yangmanST/graph_storage/tree/maste
 
 java project description：  
 preprocessing.java：It parses the feature vector and interacts with the database to obtain the vector label.  
+
 ## run
 labeling phase：Package preprocesing into a jar package, and then run in the ubuntu.Before run the jar package,you need to deploy the [benchmark](https://github.com/kuzeko/graph-databases-testsuite)  
 train phase:the main program responsible for training and evaluation is [classify.py](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution/classify.py)  
 
 ## Results
 We train the models with CPU and 8G memory.The accuracy evaluation on full dataset(LDBC) is as follows:
+| Syntax      | Description | Test Text     |
+| :---        |    :----:   |          ---: |
+| Header      | Title       | Here's this   |
+| Paragraph   | Text        | And more      |
 |Model | SCNN  | DCNN    | GRU  |
 |------| ----------------| ---- |
 |42%   | 0.84	|0.76	    |0.66  |
