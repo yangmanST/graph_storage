@@ -29,7 +29,7 @@ labeling phase：Package preprocesing into a jar package, and then run in the ub
 train phase:the main program responsible for training and evaluation is [classify.py](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution/classify.py)  
 
 ## Results
-We train the models with CPU and 8G memory.The accuracy evaluation on full dataset(LDBC) is as follows:
+We train the models with CPU and 8G memory.The accuracy evaluation on full dataset(LDBC) is as follows:  
  Model      | SCNN | DCNN     | GRU     
  :---        |    :----:   |          ---:  
  42%   | 0.84	| 0.76	    | 0.66  
