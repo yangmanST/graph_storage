@@ -22,7 +22,7 @@ directory:[cost_evalution](https://github.com/yangmanST/graph_storage/tree/maste
 [scnn.py](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution/scnn.py),[dcnn.py](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution/dcnn.py) and [gru.py](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution/gru.py) are the three models;[sampling.py](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution/sampling.py) is responsible for sampling in each round of active learning;[classify.py](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution/classify.py) is the main program responsible for training and evaluation.
 
 java project description：  
-preprocessing.java：It parses the feature vector and interacts with the database to obtain the vector label.  
+[preprocessing.java](https://github.com/yangmanST/graph_storage/blob/master/pre_data/src/pre_data/Preprocessing.java)：It parses the feature vector and interacts with the database to obtain the vector label.  
 
 ## run
 labeling phase：Package preprocesing into a jar package, and then run in the ubuntu.Before run the jar package,you need to deploy the [benchmark](https://github.com/kuzeko/graph-databases-testsuite)  
