@@ -1,10 +1,24 @@
 # graph_storage
-## Background
-We design an active auto-estimator to implement the graph storage solution. Considering the complex characteristics of evaluation task, we carefully design
-the feature engineering, including graph data features, graph workload features and graph storage solution. Our model could be used to evaluate which one is the best storage solution incertain graph and workload. In the experiment, we utilize two open source graph datasets in micro-benchmark  to train models(SCNN,DCNN,GRU),which are Freebase and LDBC datasets.
 
-## Experiments
-Our experiments are conducted on the Ubuntu 18.04 with 8G memory and 80G disk. The deep classfier is trained with CPU and 8G memory.
+## Environment Setup
+Setup:
+* . clone the project with the command "git clone https://github.com/yangmanST/graph_storage.git"
+* . install python dependencies:just install -dependencies
+* . deploy the [benchmark](https://github.com/kuzeko/graph-databases-testsuite):deploy the benchmark in the linux ,the installation process is detailed in the benchmark link above.
+
+## Dataset 
+* . Graph datasets:In the experiment, we utilize two open source graph datasets in micro-benchmark  to train models(SCNN,DCNN,GRU),which are Freebase and LDBC datasets.Download the datasets from 放链接.The datasets are put in the corresponding directory of benchmark above.
+* . Feature vector datasets:After the coding phase,the related datasets need to be put in the directory "pre_data/src/pre_data/ve/".
+
+## labeling  
+Package [preprocesing](https://github.com/yangmanST/graph_storage/blob/master/pre_data) into a jar package, and then run in the ubuntu shell with the command "java -jar pre_data.jar" to label the sample.Our experiments are conducted on the Ubuntu 18.04 with 8G memory and 80G disk.
+
+## Train & Test  
+The deep classfier is trained with CPU and 8G memory.
+train phase:the main program responsible for training and evaluation is [classify.py](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution/classify.py).The train process is realized by the function "first_train"
+test phase:the function "retrain1" realizes the test phase
+cross-validation: the function "k_test" realizes the cross-validation 
+
 
 ## Code introduction
 Dataset description:  
@@ -24,9 +38,7 @@ directory:[cost_evalution](https://github.com/yangmanST/graph_storage/tree/maste
 java project description：  
 [preprocessing.java](https://github.com/yangmanST/graph_storage/blob/master/pre_data/src/pre_data/Preprocessing.java)：It parses the feature vector and interacts with the database to obtain the vector label.  
 
-## run
-labeling phase：Package preprocesing into a jar package, and then run in the ubuntu.Before run the jar package,you need to deploy the [benchmark](https://github.com/kuzeko/graph-databases-testsuite)  
-train phase:the main program responsible for training and evaluation is [classify.py](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution/classify.py)  
+
 
 ## Results
 We train the models with CPU and 8G memory.  
