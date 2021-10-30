@@ -11,18 +11,18 @@ Setup:
 * Feature vector datasets:After the coding phase,the related datasets need to be put in the directory "pre_data/src/pre_data/ve/".
 
 ## coding and labeling  
-* coding:the related functions are in the [python file](https://github.com/yangmanST/graph_storage/tree/master/processing),just call them in the main program to coding.
-* labeling:Package [preprocesing](https://github.com/yangmanST/graph_storage/blob/master/pre_data) into a jar package, and then run in the ubuntu shell with the command "java -jar pre_data.jar" to label the sample.Our experiments are conducted on the Ubuntu 18.04 with 8G memory and 80G disk.
+* coding:The related functions are in the [python file](https://github.com/yangmanST/graph_storage/tree/master/processing),just call them in the main program to coding.The results of coding are in the directory [initial](https://github.com/yangmanST/graph_storage/tree/master/dataset/initial).  
+* labeling:Package [preprocesing](https://github.com/yangmanST/graph_storage/blob/master/pre_data) into a jar package, and then run in the ubuntu shell with the command "java -jar pre_data.jar" to label the sample.When run the jar package,you need to input some control information(such as 0 or 1) to choose the database.Our experiments are conducted on the Ubuntu 18.04 with 8G memory and 80G disk.
 
 ## Train & Test  
 The deep classfier is trained with CPU and 8G memory.
 * train phase:the main program responsible for training and evaluation is [classify.py](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution/classify.py).The train process is realized by the function "first_train"
 * test phase:the function "retrain1" realizes the test phase
 * cross-validation: the function "k_test" realizes the cross-validation 
-Just call the different functions in the main program to realize train and test process.Read the log.txt to check the experiment results.  
+Just call the different functions in the main program to realize train and test process.Read the log.txt to check the experiment results.The results got include the accuracy and the labeling time and so on.  
 
 ## Code introduction
-Dataset description:  
+* Dataset description:  
 directory:[dataset](https://github.com/yangmanST/graph_storage/tree/master/dataset/)  
 [initial](https://github.com/yangmanST/graph_storage/tree/master/dataset/initial):A dataset of feature vectors generated based on the graph dataset and load and storage scheme  
 [processing](https://github.com/yangmanST/graph_storage/tree/master/dataset/processing):Labeled samples obtained after stratified sampling  
@@ -30,13 +30,13 @@ directory:[dataset](https://github.com/yangmanST/graph_storage/tree/master/datas
 [test](https://github.com/yangmanST/graph_storage/tree/master/dataset/test):Labeled test set  
 [full_dataset](https://github.com/yangmanST/graph_storage/tree/master/dataset/full_dataset):Training set and test set  
 
-Module description:  
+* Module description:  
 directory:[processing](https://github.com/yangmanST/graph_storage/tree/master/processing)  
 Generate the initial feature vector  
 directory:[cost_evalution](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution)  
 [scnn.py](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution/scnn.py),[dcnn.py](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution/dcnn.py) and [gru.py](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution/gru.py) are the three models,here you can adjust model parameters;[sampling.py](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution/sampling.py) is responsible for sampling in each round of active learning;[classify.py](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution/classify.py) is the main program responsible for training and evaluation.
 
-java project description：  
+* java project description：  
 [preprocessing.java](https://github.com/yangmanST/graph_storage/blob/master/pre_data/src/pre_data/Preprocessing.java)：It parses the feature vector and interacts with the database to obtain the vector label.  
 
 
