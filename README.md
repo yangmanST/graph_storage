@@ -15,9 +15,10 @@ Package [preprocesing](https://github.com/yangmanST/graph_storage/blob/master/pr
 
 ## Train & Test  
 The deep classfier is trained with CPU and 8G memory.
-train phase:the main program responsible for training and evaluation is [classify.py](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution/classify.py).The train process is realized by the function "first_train"
-test phase:the function "retrain1" realizes the test phase
-cross-validation: the function "k_test" realizes the cross-validation 
+* train phase:the main program responsible for training and evaluation is [classify.py](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution/classify.py).The train process is realized by the function "first_train"
+* test phase:the function "retrain1" realizes the test phase
+* cross-validation: the function "k_test" realizes the cross-validation 
+Just call the different functions in the main program to realize train and test process.
 
 
 ## Code introduction
@@ -33,7 +34,7 @@ Module description:
 directory:[processing](https://github.com/yangmanST/graph_storage/tree/master/processing)  
 Generate the initial feature vector  
 directory:[cost_evalution](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution)  
-[scnn.py](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution/scnn.py),[dcnn.py](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution/dcnn.py) and [gru.py](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution/gru.py) are the three models;[sampling.py](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution/sampling.py) is responsible for sampling in each round of active learning;[classify.py](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution/classify.py) is the main program responsible for training and evaluation.
+[scnn.py](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution/scnn.py),[dcnn.py](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution/dcnn.py) and [gru.py](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution/gru.py) are the three models,here you can adjust model parameters;[sampling.py](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution/sampling.py) is responsible for sampling in each round of active learning;[classify.py](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution/classify.py) is the main program responsible for training and evaluation.
 
 java project description：  
 [preprocessing.java](https://github.com/yangmanST/graph_storage/blob/master/pre_data/src/pre_data/Preprocessing.java)：It parses the feature vector and interacts with the database to obtain the vector label.  
