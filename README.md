@@ -2,13 +2,13 @@
 
 ## Environment Setup
 Setup:
-* . clone the project with the command "git clone https://github.com/yangmanST/graph_storage.git"
-* . install python dependencies:just install -dependencies
-* . deploy the [benchmark](https://github.com/kuzeko/graph-databases-testsuite):deploy the benchmark in the linux ,the installation process is detailed in the benchmark link above.
+* clone the project with the command "git clone https://github.com/yangmanST/graph_storage.git"
+* install python dependencies:just install -dependencies
+* deploy the [benchmark](https://github.com/kuzeko/graph-databases-testsuite):deploy the benchmark in the linux ,the installation process is detailed in the benchmark link above.
 
 ## Dataset 
-* . Graph datasets:In the experiment, we utilize two open source graph datasets in micro-benchmark  to train models(SCNN,DCNN,GRU),which are Freebase and LDBC datasets.Download the datasets from 放链接.The datasets are put in the corresponding directory of benchmark above.
-* . Feature vector datasets:After the coding phase,the related datasets need to be put in the directory "pre_data/src/pre_data/ve/".
+* Graph datasets:In the experiment, we utilize two open source graph datasets in micro-benchmark to train models(SCNN,DCNN,GRU),which are Freebase and LDBC datasets.Download the datasets from [here](https://graphbenchmark.com/).The datasets are put in the corresponding directory of benchmark above.
+* Feature vector datasets:After the coding phase,the related datasets need to be put in the directory "pre_data/src/pre_data/ve/".
 
 ## labeling  
 Package [preprocesing](https://github.com/yangmanST/graph_storage/blob/master/pre_data) into a jar package, and then run in the ubuntu shell with the command "java -jar pre_data.jar" to label the sample.Our experiments are conducted on the Ubuntu 18.04 with 8G memory and 80G disk.
