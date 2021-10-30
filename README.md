@@ -10,8 +10,9 @@ Setup:
 * Graph datasets:In the experiment, we utilize two open source graph datasets in micro-benchmark to train models(SCNN,DCNN,GRU),which are Freebase and LDBC datasets.Download the datasets from [here](https://graphbenchmark.com/).The datasets are put in the corresponding directory of benchmark above.
 * Feature vector datasets:After the coding phase,the related datasets need to be put in the directory "pre_data/src/pre_data/ve/".
 
-## labeling  
-Package [preprocesing](https://github.com/yangmanST/graph_storage/blob/master/pre_data) into a jar package, and then run in the ubuntu shell with the command "java -jar pre_data.jar" to label the sample.Our experiments are conducted on the Ubuntu 18.04 with 8G memory and 80G disk.
+## coding and labeling  
+* coding:the related functions are in the [python file](https://github.com/yangmanST/graph_storage/tree/master/processing),just call them in the main program to coding.
+* labeling:Package [preprocesing](https://github.com/yangmanST/graph_storage/blob/master/pre_data) into a jar package, and then run in the ubuntu shell with the command "java -jar pre_data.jar" to label the sample.Our experiments are conducted on the Ubuntu 18.04 with 8G memory and 80G disk.
 
 ## Train & Test  
 The deep classfier is trained with CPU and 8G memory.
