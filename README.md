@@ -18,7 +18,7 @@ Setup:
 The deep classfier is trained with CPU and 8G memory.
 * train phase:the main program responsible for training and evaluation is [classify.py](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution/classify.py).The train process is realized by the function "first_train"
 * test phase:the function "retrain1" realizes the test phase
-* cross-validation: the function "k_test" realizes the cross-validation 
+* cross-validation: the function "k_test" realizes the cross-validation   
 Just call the different functions in the main program to realize train and test process.Read the log.txt to check the experiment results.The results got include the accuracy and the labeling time and so on.  
 
 ## Code introduction
