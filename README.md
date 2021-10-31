@@ -31,6 +31,6 @@ directory:[processing](https://github.com/yangmanST/graph_storage/tree/master/pr
 directory:[cost_evalution](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution) There are three models(SCNN,DCNN,GRU) you can adjust model parameters and the main program responsible for training and evaluation.
 
 * java project description：  
-[preprocessing.java](https://github.com/yangmanST/graph_storage/blob/master/pre_data/src/pre_data/Preprocessing.java)：It parses the feature vector and interacts with the database to obtain the vector label.  
+[preprocesing](https://github.com/yangmanST/graph_storage/blob/master/pre_data)：It parses the feature vector and interacts with the database to obtain the vector label.  
 
 
