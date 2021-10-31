@@ -8,7 +8,7 @@ Setup:
 
 ## Dataset 
 * deploy the [benchmark](https://github.com/kuzeko/graph-databases-testsuite):deploy the benchmark in the linux ,the installation process is detailed in the benchmark link above.
-* Graph datasets:In the experiment, we utilize two open source graph datasets in micro-benchmark to train models(SCNN,DCNN,GRU),which are Freebase and LDBC datasets.Download the datasets from [here](https://graphbenchmark.com/).The datasets are put in the corresponding directory of benchmark above.
+* Graph datasets:In the experiment, we utilize two open source graph datasets in [micro-benchmark](https://github.com/kuzeko/graph-databases-testsuite) to train models(SCNN,DCNN,GRU),which are Freebase and LDBC datasets.Download the datasets from [here](https://graphbenchmark.com/).In Freebase, a subgraph (Frb-O), which only has nodes related to organization, business, government, finance, geography,and military are considered, is created. Then, by randomly selecting 0.1 percent and 1 percent edges of this subgraph, two datasets, Freebase-small and Freebase-middle are derived. For the LDBC dataset, the synthetic dataset (LDBC) simulates the characteristics of a real social network with a power law structure and the characteristics of the real world. Finally, we use three dataset to conduct our experiments.They are put in the corresponding directory of benchmark above.
 
 
 ## Project Structure
