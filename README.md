@@ -27,10 +27,8 @@ directory:[dataset](https://github.com/yangmanST/graph_storage/tree/master/datas
 [full_dataset](https://github.com/yangmanST/graph_storage/tree/master/dataset/full_dataset):Training set and test set  
 
 * Module description:  
-directory:[processing](https://github.com/yangmanST/graph_storage/tree/master/processing)  
-Generate the initial feature vector  
-directory:[cost_evalution](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution)  
-There are three models(SCNN,DCNN,GRU) you can adjust model parameters and the main program responsible for training and evaluation.
+directory:[processing](https://github.com/yangmanST/graph_storage/tree/master/processing) Generate the initial feature vector  
+directory:[cost_evalution](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution) There are three models(SCNN,DCNN,GRU) you can adjust model parameters and the main program responsible for training and evaluation.
 
 * java project description：  
 [preprocessing.java](https://github.com/yangmanST/graph_storage/blob/master/pre_data/src/pre_data/Preprocessing.java)：It parses the feature vector and interacts with the database to obtain the vector label.  
