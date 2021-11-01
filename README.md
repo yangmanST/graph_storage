@@ -3,7 +3,7 @@
 ## Environment Setup
 Setup:
 * git clone https://github.com/yangmanST/graph_storage.git
-* Ubuntu xx, python 3.7, tensorflow 2.4.1
+* Ubuntu 18.04, python 3.7, tensorflow 2.4.1
 
 
 ## Dataset 
@@ -15,7 +15,7 @@ Setup:
 Our project consist of four main parts, including pre-data, processing, model, cost evaluation. 
 * Dataset part stores the original data, the generated features vectors, train sets and test sets.
 * Coding part is responsible for extracting features from the graph workload, graph data, graph storage solution. Users could run the main program to obtain the unlabeled samples [initial](https://github.com/yangmanST/graph_storage/tree/master/dataset/initial).
-*Labeling part is used to label the sample.Package [preprocesing](https://github.com/yangmanST/graph_storage/blob/master/pre_data) into a jar package, and then run in the ubuntu shell with the command "java -jar pre_data.jar" to label the sample
+* Labeling part is used to label the sample.Package [preprocesing](https://github.com/yangmanST/graph_storage/blob/master/pre_data) into a jar package, and then run in the ubuntu shell with the command "java -jar pre_data.jar" to label the sample。
 
 * After obtaining some labeled data, we utilize the train part which in the  directory [cost_evalution](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution) to achieve complete the active learning.
 
