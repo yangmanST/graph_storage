@@ -12,10 +12,9 @@ Setup:
 
 
 ## Project Structure
-Our project consist of four main parts, including processing,pre-data,model, cost evaluation. 
-* Dataset part stores the original data, the generated features vectors, train sets and test sets.
-* Coding part[processing](https://github.com/yangmanST/graph_storage/tree/master/processing) is responsible for extracting features from the graph workload, graph data, graph storage solution. Users could run the main program to obtain the unlabeled samples [initial](https://github.com/yangmanST/graph_storage/tree/master/dataset/initial).
-* Labeling part[pre_data](https://github.com/yangmanST/graph_storage/blob/master/pre_data) is used to label the sample.Package [preprocesing](https://github.com/yangmanST/graph_storage/blob/master/pre_data) into a jar package, and then run in the ubuntu shell with the command "java -jar pre_data.jar" to label the sample。
+Our project consists of four main parts, including processing,pre-data,model, cost evaluation. 
+* Coding part [processing](https://github.com/yangmanST/graph_storage/tree/master/processing) is responsible for extracting features from the graph workload, graph data, graph storage solution. Users could run the main program to obtain the unlabeled samples [initial](https://github.com/yangmanST/graph_storage/tree/master/dataset/initial).
+* Labeling part [pre_data](https://github.com/yangmanST/graph_storage/blob/master/pre_data) is used to label the sample.Package [preprocesing](https://github.com/yangmanST/graph_storage/blob/master/pre_data) into a jar package, and then run in the ubuntu shell with the command "java -jar pre_data.jar" to label the sample。
 * After obtaining some labeled data, we utilize the train part which in the  directory [model](https://github.com/yangmanST/graph_storage/tree/master/model) to achieve complete the active learning.
 
 * Finally, we test the active learning performance, deep classifiers comparisons and time efficiency  using the [cost_evalution](https://github.com/yangmanST/graph_storage/tree/master/cost_evalution). Read the log.txt to check the experiment results.
